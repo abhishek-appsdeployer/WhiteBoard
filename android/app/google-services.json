@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "983224580741",
+    "project_id": "whiteboard-3c6c4",
+    "storage_bucket": "whiteboard-3c6c4.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:983224580741:android:f041fb28604e9e9a2907ec",
+        "android_client_info": {
+          "package_name": "com.Whiteboard"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "983224580741-c1t0le7gg9ikk4a2d9p1dabibmkfove5.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "Whiteboard",
+            "certificate_hash": "5e8f16062ea3cd2c4a0d547876baa6f38cabf625"
+          }
+        },
+        {
+          "client_id": "983224580741-nuo9huppoc539rj2dohrr859u39s98ct.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCCq7oAA1X8AUZTY5bS4X4fafykiuTwNSQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "983224580741-nuo9huppoc539rj2dohrr859u39s98ct.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
