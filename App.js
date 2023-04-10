@@ -22,6 +22,7 @@ import {Store} from './Redux/imageslice';
 import {Provider} from 'react-redux';
 import Boards from './Screens/Boards';
 import Feed from './Screens/Feed';
+import Forgot from './Screens/Forgot';
 const Stack = createNativeStackNavigator();
 const Drawer = createDrawerNavigator();
 const Tabs = createBottomTabNavigator();
@@ -78,6 +79,16 @@ const App = () => {
               }}
               name="home"
               component={Home}
+            />
+             <Stack.Screen
+              options={{
+                headerStyle: {backgroundColor: '#151617'},
+                headerShown: false,
+                headerTintColor: 'white',
+                
+              }}
+              name="forgot"
+              component={Forgot}
             />
           </Stack.Navigator>
         </NavigationContainer>

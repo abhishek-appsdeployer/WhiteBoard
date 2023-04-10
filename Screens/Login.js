@@ -40,7 +40,8 @@ const Login = ({navigation}) => {
     //   return;
     // }
     if (usercred.password?.length >= 6) {
-    } else {
+    } 
+    else {
       seterror({error: 'Please enter a valid password '});
       return;
     }
@@ -62,8 +63,9 @@ const Login = ({navigation}) => {
       }
     } catch (err) {
       console.log(err.toString());
-      seterror({error: err.toString()});
-      Alert.alert(err.toString().slice(7));
+      // seterror({error: err.toString()});
+      seterror({error: 'Please enter a valid password '});
+      // Alert.alert(err.toString().slice(7));
     }
     setusercrd({email: '', password: ''});
   };
@@ -156,6 +158,7 @@ const Login = ({navigation}) => {
             placeholder="Password"
           />
           {error && <Text style={{color: 'yellow'}}>{error.error}</Text>}
+          <Text style={{color: 'yellow'}} onPress={()=>navigation.navigate("forgot")}>Forgot Password</Text>
           <TouchableOpacity
             android_ripple={{color: 'white'}}
             onPress={SignUPHandler}

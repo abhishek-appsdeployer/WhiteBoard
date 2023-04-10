@@ -26,6 +26,22 @@ const Boards = ({navigation}) => {
     const GoToWhiteBoardHandler = () => {
       navigation.navigate('home');
     };
+    const BoardDeleted = () => {
+      console.log('Board deleted');
+      Alert.alert(
+        'Confirmation',
+        'Are you sure you want to delete?',
+        [
+          { text: 'Yes', onPress:()=>{  dispatch(boardActions.deleteboard(data.item))}},
+          { text: 'No', onPress: () => {}, style: 'cancel' },
+        ],
+        { cancelable: false }
+      );
+      // {
+      //   dispatch(boardActions.deleteboard(data.item));
+      //   Alert.alert('Board Deleted');
+      // }
+    };
     return (
       <>
         <TouchableOpacity
@@ -37,11 +53,7 @@ const Boards = ({navigation}) => {
             name="clipboard-outline"
             color="#000000"
           />
-          <Pressable
-            onPress={() => {
-              dispatch(boardActions.deleteboard(data.item));
-              Alert.alert('Board Deleted');
-            }}>
+          <Pressable onPress={BoardDeleted}>
             <Text
               style={{
                 borderWidth: 1,
