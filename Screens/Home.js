@@ -46,7 +46,7 @@ const Home = gestureHandlerRootHOC(({route}) => {
     dispatch(imageSliceAction.addimage({id: id, image: imageuri}));
   };
   return (
-    <View style={{flex: 1}}>
+    <View style={{flex: 1,}}>
       {showcanvas ? (
         <DrawWithOptions
           image={require('../assets/imageback.jpg')}
