@@ -68,7 +68,7 @@ export default Home;
 
 const styles = StyleSheet.create({
   root: {
-    width: 39,
+    width: 40,
     height: 40,
     borderRadius: 20,
     borderWidth: 1,
